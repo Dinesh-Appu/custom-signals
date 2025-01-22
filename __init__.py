@@ -1,1 +1,1 @@
-from module import CustomSignal
+from .module import CustomSignal

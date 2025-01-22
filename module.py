@@ -7,11 +7,11 @@ class CustomSignal():
 		self.trigger_function = None
 
 
-	def emit(self, text):
+	def emit(self, text, *args, **kwargs):
 		if self.trigger_function == None:
 			return
 
-		self.trigger_function(text)
+		self.trigger_function(text , *args)
 
 
 	def connect(self, func):
